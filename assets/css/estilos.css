@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.logo{
+    width: 70%;
+    margin-bottom: 50px;
+}
+.buscar{
+    margin: 30px;
+}
+.container{
+    width: 50%;
+    display: block;
+    justify-content: center;
+    margin-top: 50px;
+}
+img{
+    width: 300px;
+}
+th{
+    font-weight: bold;
+}

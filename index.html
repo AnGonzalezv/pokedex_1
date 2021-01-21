@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/estilos.css">
+</head>
+<body>
+    <div class="container"> 
+        <img src="/assets/img/Pokemon_logo.png" class="logo" alt="...">
+
+        <div class="buscar">
+            <div class="row g-3">
+                <div class="mb-3 row">
+                    <label for="personaje" class="col-sm-3 col-form-label">Personaje</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control-plaintext" id="busqueda" value="Pikachu">
+                    </div>
+                    <div class="col-sm-3">
+                        <button type="submit" id="boton" class="btn btn-primary mb-3">Buscar</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="respImagen">
+        </div>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Habilidades</th>
+            </tr>
+          </thead>
+          <tbody id="respHab">
+              <!--La tabla se llenará con la llamada a JSON en el archivo js-->
+          </tbody>
+        </table>
+
+        <br><br>
+         
+         <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Poderes</th>
+              </tr>
+            </thead>
+            <tbody id="respPod">
+                <!--La tabla se llenará con la llamada a JSON en el archivo js-->
+            </tbody>
+         </table>
+  
+            <br><br>
+           
+
+          <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Movimientos</th>
+            </tr>
+          </thead>
+          <tbody id="respMov">
+              <!--La tabla se llenará con la llamada a JSON en el archivo js-->
+          </tbody>
+        </table>
+        
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+</html>
