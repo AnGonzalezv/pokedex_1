@@ -20,6 +20,8 @@ body{
 }
 img{
     width: 300px;
+    display: block;
+    justify-content: center;
 }
 th{
     font-weight: bold;

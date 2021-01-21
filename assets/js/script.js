@@ -3,9 +3,8 @@ document.querySelector("#boton").addEventListener("click", function(){
     traerDatos();
 });
 
-
 function traerDatos(){
-    console.log("dentro de la función");
+    // console.log("dentro de la función");
 
     let valor = (document.getElementById("busqueda").value).toLowerCase();
 
