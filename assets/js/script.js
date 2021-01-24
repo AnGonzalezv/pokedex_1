@@ -21,7 +21,7 @@ function traerDatos(){
         const POKEMON = {
             nombre: data.name,
             id: data.id,
-            tipo: traducirTipo(data.types[0].type.name),
+            tipo: data.types[0].type.name,
             imagen: data.sprites.other.dream_world.front_default,
             altura: (data.height)/10,
             peso: (data.weight)/10,
@@ -52,7 +52,7 @@ function pkmRandom(){
         const POKEMON = {
             nombre: data.name,
             id: data.id,
-            tipo: traducirTipo(data.types[0].type.name),
+            tipo: data.types[0].type.name,
             imagen: data.sprites.other.dream_world.front_default,
             altura: (data.height)/10,
             peso: (data.weight)/10,
@@ -70,80 +70,6 @@ function pkmRandom(){
     request.fail(function( error ) {
         console.log( 'Error: ' , error ); 
     });
-}
-
-function traducirTipo(tipoPokemon){
-    var tipo
-    switch(tipoPokemon){
-        case 'fire':
-            tipo = 'Fuego';
-            return tipo;
-            break;
-        case 'water':
-            tipo = 'Agua';
-            return tipo;
-            break;
-        case 'plant':
-            tipo = 'Planta';
-            return tipo;
-            break;
-        case 'normal':
-            tipo = 'Normal';
-            return tipo;
-            break;
-        case 'flying':
-            tipo = 'Volador';
-            return tipo;
-            break;
-        case 'bug':
-            tipo = 'Bicho'
-            return tipo;
-            break;
-        case 'fighting':
-            tipo = 'Luchador';
-            return tipo;
-            break;
-        case 'electric':
-            tipo = 'Eléctrico'
-            return tipo;
-            break;
-        case 'poison':
-            tipo = 'Veneno'
-            return tipo;
-            break;
-        case 'psychic':
-            tipo = 'Psíquico'
-            return tipo;
-            break;
-        case 'rock':
-            tipo = 'Roca';
-            return tipo;
-            break;
-        case 'ghost':
-            tipo = 'Fantasma';
-            return tipo;
-            break;
-        case 'ground':
-            tipo = 'Tierra';
-            return tipo;
-            break;
-        case 'fairy':
-            tipo = 'Hada';
-            return tipo;
-            break;
-        case 'dragon':
-            tipo = 'Dragón';
-            return tipo;
-            break;
-        case 'ice':
-            tipo = 'Hielo';
-            return tipo;
-            break;
-        default:
-            tipo = "Desconocido";
-            return tipo;
-            break;
-    }
 }
 
 function imprimirPokemon(pokemon){
