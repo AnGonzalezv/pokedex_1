@@ -42,7 +42,7 @@ function traerDatos(){
 
 //pokemon aleatorio al cargar pagina
 function pkmRandom(){
-    pokeNumero= Math.floor(Math.random() * (810 - 1)) + 1;
+    pokeNumero= Math.floor(Math.random() * (851 - 1)) + 1;
     var request = $.ajax({
         url: `https://pokeapi.co/api/v2/pokemon/${pokeNumero}`,
         method: "GET"
