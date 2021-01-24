@@ -12,6 +12,20 @@ body{
 .buscar{
     margin: 30px;
 }
+.button {
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
+}
 .container{
     width: 50%;
     display: block;
@@ -25,4 +39,24 @@ img{
 }
 th{
     font-weight: bold;
+}
+.detallesPokemon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.detallesPokemon__container{
+    min-height: 400px;
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.detallesPokemon__container--img{
+    height: 240px;
+    width: 200px;
 }

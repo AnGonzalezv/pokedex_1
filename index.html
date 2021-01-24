@@ -10,66 +10,33 @@
 <body>
     <div class="container"> 
         <img src="./assets/img/Pokemon_logo.png" class="logo" alt="...">
-
-        <div class="buscar">
-            <div class="row g-3">
-                <div class="mb-3 row">
-                    <label for="personaje" class="col-sm-3 col-form-label">Personaje</label>
-                    <div class="col-sm-6">
-                      <input type="text" class="form-control-plaintext" id="busqueda" value="Pikachu">
-                    </div>
-                    <div class="col-sm-3">
-                        <button type="submit" id="boton" class="btn btn-primary mb-3">Buscar</button>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-
-        <div id="respImagen"></div>
-
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Habilidades</th>
-            </tr>
-          </thead>
-          <tbody id="respHab">
-              <!--La tabla se llenará con la llamada a JSON en el archivo js-->
-          </tbody>
-        </table>
- 
-        <br><br>
-         
-         <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Poderes</th>
-              </tr>
-            </thead>
-            <tbody id="respPod">
-                <!--La tabla se llenará con la llamada a JSON en el archivo js-->
-            </tbody>
-         </table>
-  
-            <br><br>
-           
-
-          <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Movimientos</th>
-            </tr>
-          </thead>
-          <tbody id="respMov">
-              <!--La tabla se llenará con la llamada a JSON en el archivo js-->
-          </tbody>
-        </table>
-        
+        <section class="formulario">
+          <section class="formulario__container">
+                  <form class="formulario__container--form">
+                  <input class="input" id="nombrePokemon" type="text" placeholder="# o nombre">
+                  <button class="button" type="button" onclick="traerDatos()">Buscar</button>
+                  <img src="" id="img" class="pokemon" alt="">
+              </form>
+          </section>
+        </section>
+      
+        <section class="detallesPokemon">
+          <section class="detallesPokemon__container">
+              <img class="detallesPokemon__container--img" id="imagenPokemon" src="">
+              <div class="detallesPokemon__container--info">
+                  <h2 id="nombreDePokemon"></h2>
+                  <p># Pokedex: <span id="numeroPokedex"></span></p>
+                  <p>Tipo: <span id="tipo"></span></p>
+                  <p>Altura: <span id="altura"></span></p>
+                  <p>Peso: <span id="peso"></span></p>
+                  
+              </div>
+              <div id="chartContainer" style="height: 200px; width: 100%;"></div>
+          </section>
+      <div id="chartContainer" style="height: 250px; width: 100%;"></div>
     </div>
-
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
     <script src="assets/js/script.js"></script>
-
-</body>
+  </body>
 </html>
